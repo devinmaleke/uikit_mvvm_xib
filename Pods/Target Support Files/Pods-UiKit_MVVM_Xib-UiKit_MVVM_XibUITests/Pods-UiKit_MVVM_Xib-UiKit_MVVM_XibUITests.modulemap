@@ -1,0 +1,6 @@
+framework module Pods_UiKit_MVVM_Xib_UiKit_MVVM_XibUITests {
+  umbrella header "Pods-UiKit_MVVM_Xib-UiKit_MVVM_XibUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

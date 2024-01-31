@@ -11,6 +11,16 @@ import SDWebImage
 class MainMovieCell: UITableViewCell {
 
     
+    public static var identifier: String {
+        get {
+            return "MainMovieCell"
+        }
+    }
+    
+    public static func register() -> UINib {
+        UINib(nibName: "MainMovieCell", bundle: nil)
+    }
+    
     //IBOutlets:
     
     @IBOutlet weak var backView: UIView!
@@ -28,6 +38,8 @@ class MainMovieCell: UITableViewCell {
         super.awakeFromNib()
         backView.addBorder(color: .label, width: 1)
         backView.round()
+        backView.backgroundColor = .lightGray
+        
         
         movieImageView.round(5)
     }
